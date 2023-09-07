@@ -1,7 +1,7 @@
 export default {
   editor: {
     label: {
-      en: "Primevue Avatar",
+      en: "Primevue Badge",
     },
   },
   properties: {
@@ -13,7 +13,7 @@ export default {
       defaultValue: "#F23636",
     },
 
-    avatarText: {
+    badgeText: {
       label: { en: "Text content" },
       bindable: true,
       type: "Text",

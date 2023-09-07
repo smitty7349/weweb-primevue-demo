@@ -1,23 +1,23 @@
 <template>
-  <Avatar :label="avatarLabel" class="mr-2" size="xlarge" />
+  <Badge value="3" severity="danger"></Badge>
 </template>
 
 <script>
-import Avatar from 'primevue/avatar'
+import Badge from 'primevue/badge'
 import Primevue from 'primevue/config'
 import "primevue/resources/themes/lara-light-indigo/theme.css";
 
 export default {
   beforeCreate: function () {
     this.$.appContext.app.use(Primevue)
-    this.$.appContext.app.component('Avatar', Avatar)
+    this.$.appContext.app.component('Badge', Badge)
   },
   props: {
     content: { type: Object, required: true },
   },
   computed: {
-    avatarLabel() {
-      return this.content.avatarText.length ? this.content.avatarText.substring(0, 1) : ""
+    badgeLabel() {
+      return this.content.badgeText.length ? this.content.badgeText.substring(0, 4) : ""
     }
   },
 };
