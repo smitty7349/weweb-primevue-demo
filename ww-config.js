@@ -15,6 +15,7 @@ export default {
 
     avatarText: {
       label: { en: "Text content" },
+      bindable: true,
       type: "Text",
       defaultValue: "",
     },
